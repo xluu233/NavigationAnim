@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/fragmentOne">
+
+    <fragment
+        android:id="@+id/fragmentOne"
+        android:name="com.bugmaker.navigationanim.FragmentOne"
+        android:label="fragment_one"
+        tools:layout="@layout/fragment_one" >
+
+
+        <action
+            android:id="@+id/action_default"
+            app:destination="@id/fragmentTwo"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+
+            <argument
+                android:name="key"
+                app:argType="long"
+                android:defaultValue="1000L" />
+
+            <argument
+                android:name="key2"
+                app:argType="string" />
+
+        </action>
+
+
+        <action
+            android:id="@+id/action_slide"
+            app:destination="@id/fragmentTwo"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+
+
+        <action
+            android:id="@+id/action_scale1"
+            app:destination="@id/fragmentTwo"
+            app:enterAnim="@anim/scale_in_right"
+            app:exitAnim="@anim/scale_out_left"
+            app:popExitAnim="@anim/scale_out_right"
+            app:popEnterAnim="@anim/scale_in_left"/>
+
+
+        <action
+            android:id="@+id/action_scale2"
+            app:destination="@id/fragmentTwo"
+            app:enterAnim="@anim/scale2_in_right"
+            app:exitAnim="@anim/scale2_out_left"
+            app:popEnterAnim="@anim/scale2_in_left"
+            app:popExitAnim="@anim/scale2_out_right"/>
+
+        <action
+            android:id="@+id/action_scale3"
+            app:destination="@id/fragmentTwo"
+            app:enterAnim="@anim/scale3_in_right"
+            app:exitAnim="@anim/scale3_out_left"
+            app:popEnterAnim="@anim/scale3_in_left"
+            app:popExitAnim="@anim/scale3_out_right"/>
+
+
+        <action
+            android:id="@+id/action_upup"
+            app:destination="@id/fragmentTwo"
+            app:enterAnim="@anim/up_enter"
+            app:exitAnim="@anim/up_exit"
+            app:popEnterAnim="@anim/up_enter"
+            app:popExitAnim="@anim/up_exit"/>
+
+
+        <action
+            android:id="@+id/action_xxx"
+            app:destination="@id/fragmentTwo"
+            app:enterAnim="@anim/rotate_enter"
+            app:exitAnim="@anim/rotate_exit"
+            app:popEnterAnim="@anim/rotate_enter"
+            app:popExitAnim="@anim/rotate_exit"/>
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/fragmentTwo"
+        android:name="com.bugmaker.navigationanim.FragmentTwo"
+        android:label="fragment_two"
+        tools:layout="@layout/fragment_two" >
+    </fragment>
+
+
+</navigation>
