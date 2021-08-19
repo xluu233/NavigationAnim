@@ -9,17 +9,7 @@
     android:gravity="center"
     tools:context=".FragmentOne">
 
-    <Button
-        android:id="@+id/button_params"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="使用SafeArgs带参数跳转" />
 
-    <Button
-        android:id="@+id/button_bundle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="使用Bundle带参数跳转" />
 
     <Button
         android:id="@+id/button"

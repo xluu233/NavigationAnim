@@ -29,20 +29,6 @@ class FragmentOne : Fragment(R.layout.fragment_one) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        //使用Bundle携带参数
-        binding.buttonBundle.setOnClickListener {
-            val bundle = Bundle().apply {
-                putString("key","value")
-            }
-            navigate(R.id.action_default,bundle)
-        }
-
-        //使用SafeArgs携带参数
-        binding.buttonParams.setOnClickListener {
-            val action = FragmentOneDirections.actionDefault(key = 1000,key2 = "test")
-            findNavController().navigate(action)
-        }
-
         //默认动画
         binding.button.setOnClickListener {
             navigate(R.id.action_default)

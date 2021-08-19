@@ -18,18 +18,7 @@
             app:enterAnim="@anim/nav_default_enter_anim"
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim">
-
-            <argument
-                android:name="key"
-                app:argType="long"
-                android:defaultValue="1000L" />
-
-            <argument
-                android:name="key2"
-                app:argType="string" />
-
-        </action>
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
 
 
         <action
